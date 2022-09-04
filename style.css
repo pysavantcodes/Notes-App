@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #2c6efd;
+}
+
+.notescontainer .sec1{
+    text-align: center;
+}
+
+.notescontainer .sec1 h3{
+    font-size: 40px;
+    color: white;
+}
+
+.notescontainer .sec1 button{
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #6584ff;
+    border: none;
+    outline: none;
+    transition: .5s;
+    color: white;
+    margin-top: 30px;
+}
+.notescontainer .sec1 button:hover{
+    background-color: #6584ffa3;
+}
+
+.notescontainer .notearea .head img{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.notescontainer .notearea .head img:hover{
+    background-color: #3b63ffb8;
+}
+
+.notescontainer .notearea .head{
+   
+    text-align: right;
+    padding: 5px;
+    background-color:#6584ffa3 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.notearea{
+    display: none;
+    margin-top: 30px;
+}
+
+
+
+.notearea .text textarea{
+    width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding: 10px;
+ 
+}
+
+
+.notearea .text .btn{
+    text-align: right;
+    padding: 10px;
+    background-color: #6584ffa3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.notearea .text .btn button{
+    padding: 5px 16px;
+    border: none;
+    background-color: #6584ff;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.text .btn button:hover{
+    background-color: #4b6df8b8;
+}
+
+.modalcont{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7) ;
+    display:none;
+}
+
+.modal{
+    width:300px;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.modal h3{
+    padding: 20px 0;
+    padding-bottom: 10px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.modal h3 span{
+    font-size: 10px;
+    color: #212121;
+    margin-left: 3px;
+    
+}
+
+.modal input{
+    outline:none;
+    border:none;
+    padding:5px 8px;
+    border:1px solid gray;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal button{
+    padding: 5px 16px;
+    border: none;
+    background-color: #6584ff;
+    color: white;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+.modal button:hover{
+    background-color: #4b6df8b8;
+}
+
+.btnmod{
+    padding: 10px 0;
+    padding-bottom: 20px;
+    text-align: right;
+}

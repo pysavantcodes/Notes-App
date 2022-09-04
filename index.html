@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modalcont">
+        <div class="modal">
+            <h3>Save as <span> (do not add .txt)</span></h3>
+            <input id="name" placeholder="File name" type="text"><br>
+            <div class="btnmod"><a href="" id="link" download=""><button onclick="save()">Save</button></a></div>
+        </div>
+    </div>
+    <div class="notescontainer">
+        <div class="sec1">
+            <h3>Pysavant Notes</h3>
+            <button id="addnote" onclick="add()">Create New Note</button>
+        </div>
+        <div class="notearea">
+            <div class="head">
+                
+                <img id="right" src="fa-align-right.png" alt="">
+                <img id="center" src="fa-align-center.png" alt="">
+                <img id="left" src="fa-align-left.png" alt="">
+                <img id="delete" src="fa-trash-alt.png" alt="">
+            </div>
+            <div class="text">
+                <textarea placeholder="Type something..." id="input" cols="30" rows="20"></textarea>
+                <div class="btn"><button onclick="pop()">Save</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="notes.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7269668406290012"
+     crossorigin="anonymous"></script>
+</body>
+
+</html>
